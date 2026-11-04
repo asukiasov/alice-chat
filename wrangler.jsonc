@@ -2,6 +2,7 @@
   "name": "alice-chat",
   "main": "src/index.js",
   "compatibility_date": "2026-11-01",
+  "build": { "command": "node scripts/write-version.mjs" },
   "assets": {
     "directory": "./public",
     "binding": "ASSETS",

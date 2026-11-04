@@ -50,6 +50,7 @@ body.open #dr{transform:none}
 .ct b{font-size:20px}
 .ct .sn{font-size:14px;margin-top:1px}
 .ct .ph{font-size:13px;color:var(--sub);margin-top:2px}
+#ver{font-size:12px;color:var(--sub);padding:12px 20px}
 #num,#login{position:fixed;inset:0;background:rgba(40,25,80,.45);display:none;align-items:center;justify-content:center;z-index:30}
 #login{background:var(--bg);z-index:50}
 #num.show,#login.show{display:flex}
@@ -101,7 +102,7 @@ body:not(.chatting) footer{visibility:hidden}
   </div>
 </footer>
 <div id="ov"></div>
-<nav id="dr"><h2>Menu</h2><div id="me" class="ph2"></div><div id="members"></div><div id="admin" hidden><a id="addM">Добавить участницу</a><a id="myPin">Сменить мой PIN</a></div><a id="logout">Выйти</a></nav>
+<nav id="dr"><h2>Menu</h2><div id="me" class="ph2"></div><div id="members"></div><div id="admin" hidden><a id="addM">Добавить участницу</a><a id="myPin">Сменить мой PIN</a></div><a id="logout">Выйти</a><div id="ver"></div></nav>
 <div id="num"><div class="box"><h3 id="formT"></h3><div id="step2"><div id="formF"></div><div id="formE" class="err"></div><button id="save">Готово</button></div></div></div>
 <div id="login"><div class="box"><h3>Вход</h3><div id="step2l"><input id="lU" placeholder="Логин" autocomplete="username" autocapitalize="off"><input id="lP" type="password" inputmode="numeric" placeholder="PIN" autocomplete="current-password"><div id="lE" class="err"></div><button id="lGo">Войти</button></div></div></div>
 <div id="pal"><input type="range" id="lvl" min="10" max="100" value="65" aria-label="Яркость"></div>

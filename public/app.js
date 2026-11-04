@@ -210,4 +210,5 @@ async function doLogin(){
 $('lGo').onclick=doLogin;
 $('lP').addEventListener('keydown',e=>{if(e.key==='Enter')doLogin()});
 $('logout').onclick=async()=>{try{await api('/api/logout','POST')}catch(_){}showLogin()};
+fetch('/version.json').then(r=>r.ok?r.json():null).then(v=>{if(v)$('ver').textContent=v.commit+' · '+v.date}).catch(()=>{});
 fetch('/api/me').then(async r=>{if(r.ok)start((await r.json()).member);else showLogin()}).catch(showLogin);
