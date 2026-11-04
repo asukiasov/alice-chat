@@ -1,0 +1,15 @@
+{
+  "name": "alice-chat",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "vitest run --max-workers=1 --no-isolate"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "^1.0.0",
+    "vitest": "^5.1.0",
+    "wrangler": "^4.157.0"
+  }
+}
